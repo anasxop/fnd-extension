@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>FND</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="glass-bg">
+    <div class="popup-container">
+      <h1 class="title">FND</h1>
+      <p class="subtitle">Check news credibility instantly</p>
+
+      <textarea
+        id="newsInput"
+        placeholder="Paste or select news text..."
+      ></textarea>
+
+      <button id="analyzeBtn">Analyze</button>
+
+      <div id="loading" class="hidden">Analyzing…</div>
+
+      <div id="result" class="hidden">
+        <div id="verdictBadge"></div>
+        <p id="confidence"></p>
+        <p id="explanation"></p>
+
+        <div class="ml-box">
+          <p class="ml-title">ML Model (Secondary)</p>
+          <p id="mlResult"></p>
+        </div>
+      </div>
+    </div>
+
+    <script src="popup.js"></script>
+  </body>
+</html>
