@@ -5,7 +5,6 @@ const resultBox = document.getElementById("result");
 const verdictBadge = document.getElementById("verdictBadge");
 const confidenceText = document.getElementById("confidence");
 const explanationText = document.getElementById("explanation");
-const mlResultText = document.getElementById("mlResult");
 
 analyzeBtn.addEventListener("click", async () => {
   const text = input.value.trim();
@@ -51,5 +50,4 @@ function showResult(data) {
 
   confidenceText.textContent = `Confidence: ${data.confidence}%`;
   explanationText.textContent = data.explanation;
-  mlResultText.textContent = `ML: ${data.ml_result} (${data.ml_confidence}%)`;
 }

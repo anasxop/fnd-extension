@@ -48,7 +48,7 @@ pill.addEventListener("click", async () => {
   }
 
   // UPDATED URL HERE 👇
-  const res = await fetch("https://fnd-backend-eavt.onrender.com", {
+  const res = await fetch("https://fnd-backend-l4ay.onrender.com/predict", {
     method: "POST",
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify({ text: selected })
@@ -76,7 +76,6 @@ function showOverlayResult(data) {
   overlay.innerHTML = `
     <strong>${data.final_verdict}</strong> (${data.confidence}%)
     <p style="font-size:12px;margin-top:6px;">${data.explanation}</p>
-    <p style="font-size:11px;opacity:.6;">ML: ${data.ml_result} (${data.ml_confidence}%)</p>
     <button id="fnd-close">Close</button>
   `;
 

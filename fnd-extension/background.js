@@ -26,7 +26,7 @@ function sendSelectedToFND(text) {
     .then((res) => res.json())
     .then((data) => {
       alert(
-        `${data.final_verdict} (${data.confidence}%)\n\n${data.explanation}\n\nML: ${data.ml_result} (${data.ml_confidence}%)`
+        `${data.final_verdict} (${data.confidence}%)\n\n${data.explanation}`
       );
     });
 }

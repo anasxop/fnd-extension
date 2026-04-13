@@ -85,15 +85,3 @@ button {
   color: #ffd000;
 }
 
-.ml-box {
-  margin-top: 12px;
-  padding: 8px;
-  border-radius: 10px;
-  background: rgba(255, 255, 255, 0.05);
-  font-size: 12px;
-}
-
-.ml-title {
-  font-weight: bold;
-  opacity: 0.7;
-}
