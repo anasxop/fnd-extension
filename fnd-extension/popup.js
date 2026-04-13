@@ -15,7 +15,7 @@ analyzeBtn.addEventListener("click", async () => {
 
   try {
     // UPDATED URL HERE 👇
-    const res = await fetch("https://fnd-backend-l4ay.onrender.com/predict", {
+    const res = await fetch("https://fnd-backend.vercel.app/predict", {
       method: "POST",
       headers: {
         "Content-Type": "application/json"

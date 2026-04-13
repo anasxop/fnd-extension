@@ -18,7 +18,7 @@ chrome.contextMenus.onClicked.addListener((info, tab) => {
 
 function sendSelectedToFND(text) {
   // UPDATED URL HERE 👇
-  fetch("https://fnd-backend-l4ay.onrender.com/predict", {
+  fetch("https://fnd-backend.vercel.app/predict", {
     method: "POST",
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify({ text })
